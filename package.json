@@ -4,6 +4,14 @@
   "types": "lib/types/index.d.ts",
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.2.1",
+    "@types/node": "^15.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.22.1",
+    "@typescript-eslint/parser": "^4.22.1",
+    "eslint": "^7.25.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.2.1",
     "rollup": "^2.47.0",
     "rollup-plugin-dts": "^3.0.1",
     "shx": "^0.3.3",
@@ -12,6 +20,9 @@
   },
   "scripts": {
     "build": "rollup -c rollup.config.ts",
-    "clean": "shx rm -rf lib"
+    "clean": "shx rm -rf lib",
+    "fmt": "run-p fmt:*",
+    "fmt:eslint": "DEBUG=eslint:cli-engine eslint '**/*.ts' --max-warnings=0 --fix",
+    "fmt:prettier": "prettier '**/*.json' --write"
   }
 }
