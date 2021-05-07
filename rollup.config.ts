@@ -11,10 +11,12 @@ export default [
       {
         format: "cjs",
         dir: dirname(pkg.main),
+        exports: "default",
       },
       {
-        format: "esm",
+        format: "es",
         dir: dirname(pkg.module),
+        exports: "default",
       },
     ],
     plugins: [typescript()],
