@@ -3,6 +3,15 @@ import dts from 'rollup-plugin-dts'
 import { dirname } from 'path'
 import pkg from './package.json'
 
+const banner = `/**
+ * @license ${pkg.name} v${pkg.version}
+ *
+ * Copyright (c) pnlybubbles
+ *
+ * This source code is licensed under the ${pkg.license} license found in the
+ * \`license\` file in the root directory of this source tree.
+ */`
+
 export default [
   {
     input: 'src/index.ts',
@@ -12,11 +21,13 @@ export default [
         format: 'cjs',
         dir: dirname(pkg.main),
         exports: 'default',
+        banner,
       },
       {
         format: 'es',
         dir: dirname(pkg.module),
         exports: 'default',
+        banner,
       },
     ],
     plugins: [typescript()],
@@ -25,6 +36,7 @@ export default [
     input: 'src/index.ts',
     output: {
       file: pkg.types,
+      banner,
     },
     plugins: [dts()],
   },
