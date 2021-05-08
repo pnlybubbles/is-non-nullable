@@ -1,3 +1,4 @@
+import type { RollupOptions } from 'rollup'
 import typescript from '@rollup/plugin-typescript'
 import dts from 'rollup-plugin-dts'
 import { dirname } from 'path'
@@ -12,7 +13,7 @@ const banner = `/**
  * \`license\` file in the root directory of this source tree.
  */`
 
-export default [
+const config: RollupOptions[] = [
   {
     input: 'src/index.ts',
     preserveModules: true,
@@ -41,3 +42,5 @@ export default [
     plugins: [dts()],
   },
 ]
+
+export default config
