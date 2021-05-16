@@ -3340,6 +3340,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "is-non-nullable@workspace:."
   dependencies:
+    "@jest/types": ^26.6.2
     "@rollup/plugin-typescript": ^8.2.1
     "@types/jest": ^26.0.23
     "@types/node": ^15.0.2
