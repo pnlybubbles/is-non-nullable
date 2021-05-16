@@ -35,5 +35,25 @@
     "fmt:prettier": "prettier '**/*.json' --write",
     "typecheck:config": "tsc --project config/tsconfig.json --noEmit",
     "test": "jest -c config/jest.config.ts"
-  }
+  },
+  "keywords": [
+    "check",
+    "is",
+    "non-nullable",
+    "nonnullable",
+    "null",
+    "undefined",
+    "nullable",
+    "present",
+    "blank",
+    "typescript",
+    "type-guard",
+    "filter",
+    "type",
+    "narrowing",
+    "typeof",
+    "value"
+  ],
+  "bugs": "https://github.com/pnlybubbles/is-non-nullable/issues",
+  "repository": "github:pnlybubbles/is-non-nullable"
 }
