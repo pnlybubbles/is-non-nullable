@@ -6,6 +6,10 @@
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
   "types": "lib/types/index.d.ts",
+  "files": [
+    "src",
+    "lib"
+  ],
   "devDependencies": {
     "@jest/types": "^26.6.2",
     "@rollup/plugin-typescript": "^8.2.1",
