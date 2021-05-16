@@ -12,5 +12,6 @@
   "[typescript]": {
     "editor.formatOnSave": false,
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  }
+  },
+  "jest.jestCommandLine": "yarn test"
 }
