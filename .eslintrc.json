@@ -8,8 +8,8 @@
   "parserOptions": {
     "project": [
       "./tsconfig.json",
-      "./tsconfig.config.json",
-      "./tsconfig.test.json"
+      "./config/tsconfig.json",
+      "./test/tsconfig.json"
     ]
   },
   "ignorePatterns": ["lib"]

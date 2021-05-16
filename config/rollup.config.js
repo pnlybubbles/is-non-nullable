@@ -1,8 +1,7 @@
-import type { RollupOptions } from 'rollup'
 import typescript from '@rollup/plugin-typescript'
 import dts from 'rollup-plugin-dts'
 import { dirname } from 'path'
-import pkg from './package.json'
+import pkg from '../package.json'
 
 const banner = `/**
  * @license ${pkg.name} v${pkg.version}
@@ -13,7 +12,8 @@ const banner = `/**
  * \`license\` file in the root directory of this source tree.
  */`
 
-const config: RollupOptions[] = [
+/** @type {import('rollup').RollupOptions[]} */
+const config = [
   {
     input: 'src/index.ts',
     preserveModules: true,

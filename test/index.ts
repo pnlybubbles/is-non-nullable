@@ -1,4 +1,4 @@
-import isNonNullable from './index'
+import isNonNullable from '../src/index'
 
 test('null is not non-nullable', () => {
   expect(isNonNullable(null)).toBe(false)

@@ -28,11 +28,12 @@
     "typescript": "^4.2.4"
   },
   "scripts": {
-    "build": "rollup -c rollup.config.ts",
+    "build": "rollup -c config/rollup.config.js",
     "clean": "shx rm -rf lib",
     "fmt": "run-p fmt:*",
     "fmt:eslint": "cross-env DEBUG=eslint:cli-engine eslint '**/*.ts' --max-warnings=0 --fix",
     "fmt:prettier": "prettier '**/*.json' --write",
-    "test": "jest"
+    "typecheck:config": "tsc --project config/tsconfig.json --noEmit",
+    "test": "jest -c config/jest.config.ts"
   }
 }
