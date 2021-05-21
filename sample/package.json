@@ -8,6 +8,6 @@
     "test": "parcel index.html"
   },
   "dependencies": {
-    "is-non-nullable": "../artifacts/1.0.0.tgz"
+    "is-non-nullable": "../artifacts/0.0.0.tgz"
   }
 }
