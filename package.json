@@ -42,8 +42,10 @@
     "fmt:eslint": "cross-env DEBUG=eslint:cli-engine eslint '**/*.ts' --max-warnings=0 --fix",
     "fmt:prettier": "prettier '**/*.json' --write",
     "typecheck:config": "tsc --project config/tsconfig.json --noEmit",
-    "test": "jest -c config/jest.config.ts",
-    "artifact": "yarn run-s clean build artifact:generate",
+    "typecheck:sample": "tsc --project sample/tsconfig.json --noEmit",
+    "test": "run-p 'typecheck:*' 'fmt:*' 'test:*'",
+    "test:jest": "jest -c config/jest.config.ts",
+    "artifact": "run-s clean build 'artifact:*'",
     "artifact:generate": "yarn pack --out artifacts/%s-%v.tgz"
   },
   "keywords": [
