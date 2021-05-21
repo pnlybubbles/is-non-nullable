@@ -13,6 +13,9 @@
   "workspaces": [
     "sample"
   ],
+  "engines": {
+    "node": ">=14"
+  },
   "devDependencies": {
     "@jest/types": "^26.6.2",
     "@rollup/plugin-typescript": "^8.2.1",
