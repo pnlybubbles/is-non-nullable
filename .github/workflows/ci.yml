@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - run: yarn rebuild
-      - run: yarn artifact:generate
+      - run: yarn run rebuild
+      - run: yarn run artifact:generate
       - run: yarn --immutable --immutable-cache --check-cache --inline-builds
-      - run: yarn test
+      - run: yarn run test
