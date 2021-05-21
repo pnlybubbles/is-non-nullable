@@ -49,8 +49,8 @@
     "test": "run-p 'typecheck:*' 'lint:*' 'test:*'",
     "test:jest": "jest -c config/jest.config.ts",
     "artifact": "run-s clean build artifact:generate artifact:install",
-    "artifact:generate": "yarn pack --out artifacts/%s-%v.tgz",
-    "artifact:install": "yarn workspace sample add artifacts/%s-%v.tgz"
+    "artifact:generate": "yarn pack --out artifacts/%v.tgz",
+    "artifact:install": "yarn workspace sample add ../artifacts/$npm_package_version.tgz"
   },
   "keywords": [
     "check",
