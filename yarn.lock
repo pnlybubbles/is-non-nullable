@@ -5949,6 +5949,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"is-non-nullable@file:../artifacts/1.0.0.tgz::locator=sample%40workspace%3Asample":
+  version: 1.0.0
+  resolution: "is-non-nullable@file:../artifacts/1.0.0.tgz::locator=sample%40workspace%3Asample"
+  checksum: accbcb8fa2a7d8289cd5a763c219dd43b806eddcfe0897af1fa1a7b4595314de3566e74b318c8539b5a361190f5071a1adb30f5dfb3441961ae7a66f01337e8d
+  languageName: node
+  linkType: hard
+
 "is-non-nullable@workspace:.":
   version: 0.0.0-use.local
   resolution: "is-non-nullable@workspace:."
@@ -9476,6 +9483,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sample@workspace:sample"
   dependencies:
+    is-non-nullable: ../artifacts/1.0.0.tgz
     parcel: ^2.0.0-beta.2
   languageName: unknown
   linkType: soft

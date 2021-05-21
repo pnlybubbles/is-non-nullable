@@ -6,5 +6,8 @@
   },
   "scripts": {
     "test": "parcel index.html"
+  },
+  "dependencies": {
+    "is-non-nullable": "../artifacts/1.0.0.tgz"
   }
 }
