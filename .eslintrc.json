@@ -9,7 +9,8 @@
     "project": [
       "./tsconfig.json",
       "./config/tsconfig.json",
-      "./test/tsconfig.json"
+      "./test/tsconfig.json",
+      "./sample/tsconfig.json"
     ]
   },
   "ignorePatterns": ["lib"]

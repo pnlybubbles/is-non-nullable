@@ -10,6 +10,9 @@
     "src",
     "lib"
   ],
+  "workspaces": [
+    "sample"
+  ],
   "devDependencies": {
     "@jest/types": "^26.6.2",
     "@rollup/plugin-typescript": "^8.2.1",
@@ -39,7 +42,9 @@
     "fmt:eslint": "cross-env DEBUG=eslint:cli-engine eslint '**/*.ts' --max-warnings=0 --fix",
     "fmt:prettier": "prettier '**/*.json' --write",
     "typecheck:config": "tsc --project config/tsconfig.json --noEmit",
-    "test": "jest -c config/jest.config.ts"
+    "test": "jest -c config/jest.config.ts",
+    "artifact": "yarn run-s clean build artifact:generate",
+    "artifact:generate": "yarn pack --out artifacts/%s-%v.tgz"
   },
   "keywords": [
     "check",

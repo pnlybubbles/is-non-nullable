@@ -1,4 +1,5 @@
 lib
+artifacts
 
 node_modules
 npm-debug.log
@@ -11,5 +12,7 @@ package-lock.json
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+.parcel-cache
 
 *.DS_Store
