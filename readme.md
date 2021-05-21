@@ -1,5 +1,7 @@
 # is-non-nullable
 
+[![CI](https://github.com/pnlybubbles/is-non-nullable/actions/workflows/ci.yml/badge.svg)](https://github.com/pnlybubbles/is-non-nullable/actions/workflows/ci.yml)
+
 Just function to predicate non nullable with type guard.
 
 ## Install
