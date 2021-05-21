@@ -47,8 +47,9 @@
     "typecheck:sample": "tsc --project sample/tsconfig.json --noEmit",
     "test": "run-p 'typecheck:*' 'lint:*' 'test:*'",
     "test:jest": "jest -c config/jest.config.ts",
-    "artifact": "run-s clean build 'artifact:*'",
-    "artifact:generate": "yarn pack --out artifacts/%s-%v.tgz"
+    "artifact": "run-s clean build artifact:generate artifact:install",
+    "artifact:generate": "yarn pack --out artifacts/%s-%v.tgz",
+    "artifact:install": "yarn workspace sample add artifacts/%s-%v.tgz"
   },
   "keywords": [
     "check",
