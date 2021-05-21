@@ -1,3 +1,4 @@
+// package could be installed by `yarn artifact` in project root
 import isNonNullable from 'is-non-nullable'
 
 const sample = [1, 2, null, 3, undefined, null, 4, 5, null]
