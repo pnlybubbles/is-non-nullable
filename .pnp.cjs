@@ -23,7 +23,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:."
       },
       {
-        "name": "sample-39a5e0",
+        "name": "sample",
         "reference": "workspace:sample"
       }
     ],
@@ -31,7 +31,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.{1,2}(?:\\/|$))(?:(?:(?!(?:^|\\/)\\.{1,2}(?:\\/|$)).)*?)|$))$)",
     "fallbackExclusionList": [
       ["is-non-nullable", ["workspace:."]],
-      ["sample-39a5e0", ["workspace:sample"]]
+      ["sample", ["workspace:sample"]]
     ],
     "fallbackPool": [
     ],
@@ -11010,11 +11010,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["sample-39a5e0", [
+      ["sample", [
         ["workspace:sample", {
           "packageLocation": "./sample/",
           "packageDependencies": [
-            ["sample-39a5e0", "workspace:sample"],
+            ["sample", "workspace:sample"],
             ["parcel", "npm:2.0.0-nightly.678"]
           ],
           "linkType": "SOFT",
