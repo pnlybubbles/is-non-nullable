@@ -7076,13 +7076,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["is-non-nullable", [
-        ["file:../artifacts/package.tgz::locator=sample%40workspace%3Asample", {
-          "packageLocation": "./.yarn/cache/is-non-nullable-file-9c775b0dc2-22141afab3.zip/node_modules/is-non-nullable/",
-          "packageDependencies": [
-            ["is-non-nullable", "file:../artifacts/package.tgz::locator=sample%40workspace%3Asample"]
-          ],
-          "linkType": "HARD",
-        }],
         ["workspace:.", {
           "packageLocation": "./",
           "packageDependencies": [
@@ -11022,8 +11015,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./sample/",
           "packageDependencies": [
             ["sample", "workspace:sample"],
-            ["is-non-nullable", "file:../artifacts/package.tgz::locator=sample%40workspace%3Asample"],
-            ["parcel", "npm:2.0.0-nightly.678"]
+            ["parcel", "npm:2.0.0-nightly.678"],
+            ["typescript", "patch:typescript@npm%3A4.2.4#~builtin<compat/typescript>::version=4.2.4&hash=ea7f47"]
           ],
           "linkType": "SOFT",
         }]

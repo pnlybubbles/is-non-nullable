@@ -5949,13 +5949,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-non-nullable@file:../artifacts/package.tgz::locator=sample%40workspace%3Asample":
-  version: 0.0.0
-  resolution: "is-non-nullable@file:../artifacts/package.tgz::locator=sample%40workspace%3Asample"
-  checksum: 22141afab3229698bd6515f305805eb1dc3c4d4134455c2ec329cf97c05444a0cf48f0612f1a1bfc602bf3edf9ff47d0d567d436bca143a97ea2c65852338ea9
-  languageName: node
-  linkType: hard
-
 "is-non-nullable@workspace:.":
   version: 0.0.0-use.local
   resolution: "is-non-nullable@workspace:."
@@ -9483,8 +9476,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sample@workspace:sample"
   dependencies:
-    is-non-nullable: ../artifacts/package.tgz
     parcel: ^2.0.0-beta.2
+    typescript: ^4.2.4
   languageName: unknown
   linkType: soft
 

@@ -15,4 +15,5 @@ jobs:
       - run: yarn --immutable --immutable-cache --check-cache --inline-builds
       - run: yarn run clean
       - run: yarn run test
-      - run: yarn run build
+      - run: yarn run artifact
+      - run: yarn workspace sample run test
