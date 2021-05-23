@@ -54,9 +54,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest", "npm:26.6.3"],
             ["npm-run-all", "npm:4.1.5"],
             ["prettier", "npm:2.2.1"],
+            ["rimraf", "npm:3.0.2"],
             ["rollup", "npm:2.47.0"],
             ["rollup-plugin-dts", "virtual:57488ce4f99ef0c11e05787b6e7b7399d79507f0e61f3f80c2a1af9202bc52b168c001434cbd493371c75dc2d0b6d190339480c139a7a5ccf1e9e3d604f70825#npm:3.0.1"],
-            ["shx", "npm:0.3.3"],
             ["ts-jest", "virtual:57488ce4f99ef0c11e05787b6e7b7399d79507f0e61f3f80c2a1af9202bc52b168c001434cbd493371c75dc2d0b6d190339480c139a7a5ccf1e9e3d604f70825#npm:26.5.6"],
             ["ts-node", "virtual:57488ce4f99ef0c11e05787b6e7b7399d79507f0e61f3f80c2a1af9202bc52b168c001434cbd493371c75dc2d0b6d190339480c139a7a5ccf1e9e3d604f70825#npm:9.1.1"],
             ["tslib", "npm:2.2.0"],
@@ -6723,15 +6723,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["interpret", [
-        ["npm:1.4.0", {
-          "packageLocation": "./.yarn/cache/interpret-npm-1.4.0-17b4b5b0a4-2e5f51268b.zip/node_modules/interpret/",
-          "packageDependencies": [
-            ["interpret", "npm:1.4.0"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
       ["ip", [
         ["npm:1.1.5", {
           "packageLocation": "./.yarn/cache/ip-npm-1.1.5-af36318aa6-30133981f0.zip/node_modules/ip/",
@@ -7094,9 +7085,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest", "npm:26.6.3"],
             ["npm-run-all", "npm:4.1.5"],
             ["prettier", "npm:2.2.1"],
+            ["rimraf", "npm:3.0.2"],
             ["rollup", "npm:2.47.0"],
             ["rollup-plugin-dts", "virtual:57488ce4f99ef0c11e05787b6e7b7399d79507f0e61f3f80c2a1af9202bc52b168c001434cbd493371c75dc2d0b6d190339480c139a7a5ccf1e9e3d604f70825#npm:3.0.1"],
-            ["shx", "npm:0.3.3"],
             ["ts-jest", "virtual:57488ce4f99ef0c11e05787b6e7b7399d79507f0e61f3f80c2a1af9202bc52b168c001434cbd493371c75dc2d0b6d190339480c139a7a5ccf1e9e3d604f70825#npm:26.5.6"],
             ["ts-node", "virtual:57488ce4f99ef0c11e05787b6e7b7399d79507f0e61f3f80c2a1af9202bc52b168c001434cbd493371c75dc2d0b6d190339480c139a7a5ccf1e9e3d604f70825#npm:9.1.1"],
             ["tslib", "npm:2.2.0"],
@@ -10581,16 +10572,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["rechoir", [
-        ["npm:0.6.2", {
-          "packageLocation": "./.yarn/cache/rechoir-npm-0.6.2-0df5f171ec-fe76bf9c21.zip/node_modules/rechoir/",
-          "packageDependencies": [
-            ["rechoir", "npm:0.6.2"],
-            ["resolve", "patch:resolve@npm%3A1.20.0#~builtin<compat/resolve>::version=1.20.0&hash=00b1ff"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
       ["regex-not", [
         ["npm:1.0.2", {
           "packageLocation": "./.yarn/cache/regex-not-npm-1.0.2-06a03c9206-3081403de7.zip/node_modules/regex-not/",
@@ -11192,34 +11173,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["shelljs", [
-        ["npm:0.8.4", {
-          "packageLocation": "./.yarn/cache/shelljs-npm-0.8.4-e2890f4ce2-27f83206ef.zip/node_modules/shelljs/",
-          "packageDependencies": [
-            ["shelljs", "npm:0.8.4"],
-            ["glob", "npm:7.1.7"],
-            ["interpret", "npm:1.4.0"],
-            ["rechoir", "npm:0.6.2"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
       ["shellwords", [
         ["npm:0.1.1", {
           "packageLocation": "./.yarn/cache/shellwords-npm-0.1.1-a091a78197-8d73a5e986.zip/node_modules/shellwords/",
           "packageDependencies": [
             ["shellwords", "npm:0.1.1"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["shx", [
-        ["npm:0.3.3", {
-          "packageLocation": "./.yarn/cache/shx-npm-0.3.3-6071b4b10c-2e408a79c6.zip/node_modules/shx/",
-          "packageDependencies": [
-            ["shx", "npm:0.3.3"],
-            ["minimist", "npm:1.2.5"],
-            ["shelljs", "npm:0.8.4"]
           ],
           "linkType": "HARD",
         }]
