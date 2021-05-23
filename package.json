@@ -1,7 +1,7 @@
 {
   "name": "is-non-nullable",
   "description": "Just function to predicate non nullable with type guard.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
