@@ -1,5 +1,6 @@
 # is-non-nullable
 
+[![npm version](https://badge.fury.io/js/is-non-nullable.svg)](https://badge.fury.io/js/is-non-nullable)
 [![test](https://github.com/pnlybubbles/is-non-nullable/actions/workflows/test.yml/badge.svg)](https://github.com/pnlybubbles/is-non-nullable/actions/workflows/test.yml)
 
 Just function to predicate non nullable with type guard.
