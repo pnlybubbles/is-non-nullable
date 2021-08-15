@@ -74,5 +74,8 @@
     "value"
   ],
   "bugs": "https://github.com/pnlybubbles/is-non-nullable/issues",
-  "repository": "github:pnlybubbles/is-non-nullable"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pnlybubbles/is-non-nullable.git"
+  }
 }
